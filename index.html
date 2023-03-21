@@ -1,0 +1,21 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="root"></canvas>
+    <script type="module">
+        function fitToContainer(canvas){
+            canvas.style.width='100%';
+            canvas.style.height='100%';
+            canvas.width  = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        fitToContainer(document.getElementById('root'))
+        import init , {add,load_mm as load} from './pkg/gal.js'
+        await init()
+        // console.log(add(1,2))
+        load()
+    </script>
+</body>
+</html>
