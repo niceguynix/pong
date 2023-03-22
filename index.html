@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <canvas id="root"></canvas>
@@ -12,7 +12,7 @@
             canvas.height = canvas.offsetHeight;
         }
         fitToContainer(document.getElementById('root'))
-        import init , {add,load_mm as load} from './pkg/gal.js'
+        import init , {add,load_mm as load} from './pkg/pong.js'
         await init()
         // console.log(add(1,2))
         load()
